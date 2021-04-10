@@ -24,6 +24,7 @@ How to run the project:
 4. To make sure everything is up to date Build the project using in IntelliJ shortcut Ctrl + F9.
 5. Run the Spring boot application in a chosen environment. For example in my IntelliJ IDEA to run the application you can use the shortcut Shift + F10
 6. The main page of the project is set on: http://localhost:8080/  (setup in application properties)  To do every possible move in the application I've used Postman to do HTTP requests.
+7. Database info can be found in the database tree: postgres@localhost/databases/postgres/schemas/public/tables
 Functions usage:
 1. To see all the available notes go to http://localhost:8080/. Click on each of the titles to see the content.
 2. To add a note do the Postman request using POST method, go to http://localhost:8080/notes/create and in the request body as raw json file type title and content,
