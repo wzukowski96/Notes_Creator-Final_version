@@ -1,0 +1,19 @@
+.container{
+    margin-left: 500px;
+    font-size: x-large
+}
+
+.col{
+    float: left;
+    color: brown;
+}
+
+.col2{
+    float: left;
+    color: blue;
+}
+
+.col3{
+    float: left;
+    color: darkgreen;
+}

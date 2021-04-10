@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/style.css"/>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+</head>
+<body>
+
+<div class="container">
+    <table class="col">
+        <tr>
+            <th>Title</th>
+        </tr>
+        <tr th:each="note : ${notes}">
+
+            <td>
+                <a th:href="@{${'/notes/' + note.title}}" th:text="${note.title}"></a>
+            </td>
+
+        </tr>
+    </table>
+    <table class="col2">
+        <tr>
+            <th>Created</th>
+        </tr>
+        <tr th:each="note : ${notes}">
+            <td th:text="${note.created}"></td>
+        </tr>
+    </table>
+    <table class="col3">
+        <tr>
+            <th>Modified</th>
+        </tr>
+        <tr th:each="note : ${notes}">
+            <td th:text="${note.modified}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
